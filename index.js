@@ -19,12 +19,15 @@ function fetchrecipes(){
     api()
     fetch(recipebycal)
         .then(response => response.json())
-        
         .then(displaydom)
 
 }
-function displaydom(_data){
-        for (x in _data){
+function displaydom(_incoming){
+        for (x in _incoming){
+            const imag = document.createElement("img");
+            imag.setAttribute("src",_incoming[x].image);
+            console.log(_incoming[x]);
+            document.body.appendChild(imag)
             
      }
     
