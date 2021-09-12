@@ -34,11 +34,5 @@ function displaydom(_incoming){
 
  }
 
-
-
-
-
-
-
 submitbtn.addEventListener("click",fetchrecipes)
 
