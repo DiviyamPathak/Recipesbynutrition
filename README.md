@@ -1,2 +1,2 @@
 # Recipesbynutrition
-Basic html js website to search recipes by nutrition
+Basic html js website to search dishes by nutrition
