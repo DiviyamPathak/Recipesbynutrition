@@ -20,15 +20,18 @@ function fetchrecipes(){
     fetch(recipebycal)
         .then(response => response.json())
         .then(displaydom)
+        .then(console.log("fetched"))
 
 }
 function displaydom(_incoming){
         for (x in _incoming){
             const imag = document.createElement("img");
+            const name = document.createElement("h4")
+            name.innerText= _incoming[x].title
+            document.body.appendChild(name)
             imag.setAttribute("src",_incoming[x].image);
             console.log(_incoming[x]);
-            document.body.appendChild(imag)
-            
+            document.body.appendChild(imag)        
      }
     
 
